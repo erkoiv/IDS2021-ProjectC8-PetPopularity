@@ -11,7 +11,7 @@ Masud Rana, Erik Kõiv
 
 ## Task 2. Business understanding
 
-**Project values and backgrounds: **
+**Project values and backgrounds:**
 
 Our project goal is to provide shelter to the street animals for their better living. This project is initiated by petfinder.my and they are a non-profit organization, so there is no direct business value from this project. Main value from this project that we can think of is social value. Below we are trying to explain the background or current scenario and later on we will explain how this project can solve some of those problems more efficiently. 
 
