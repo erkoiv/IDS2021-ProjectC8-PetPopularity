@@ -17,6 +17,21 @@ In basic approach, we first tried to findout which feature or features impacting
 With this approach we got following distribution:
 ![image](./images/featureDistribution.png)
 
+From this distribution, we can not find very notable impact of specific feature or features. However, it has been seen that with the addition of accessories, SubjectFocus and Blur, popularity score is kind of impacted either positively or negatively. 
+
+We had decided to train basic models with those features individually, combinedly and with all features. And we used KNN, RandomForest, DecisionTree & SVM classifiers. 
+
+### Spliting the data
+We have splited the train dataset provided into 90% training set, 5% validation set and 5% test set. 
+
+### Train the models
+Then we start the training process with training set for various classifiers and also tried to optimize the classifiers parameters, for example neighbour size for knn and depth for RandomForest. We also measured RMSE and kept the record of the performance of various models. 
+
+Our Model VS RMSE plot is like below:
+![image](./images/ModelVsRMSE.png)
+
+
+
 ## Attempted YOLOv5
 YOLOv5 was selected since one of the teammembers already was familiar with it so training could be started quickly. The YOLOv5s model was selected as an entry point. Official documentation was followed to label and format the data into a YOLOv5 format.
 
