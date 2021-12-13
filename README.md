@@ -30,7 +30,17 @@ Then we start the training process with training set for various classifiers and
 Our Model VS RMSE plot is like below:
 ![image](./images/ModelVsRMSE.png)
 
+From this plot, we can see noe of the model is very impressive but our aim is to select as good as we can. And we can see, KNN with accessories only, gi ve the best RMSE value where as RandomForest, DecisionTree and SVM models are good with Accessories, Subject focus and Blur. If we consider all the features then RandomForest is the best model so far.
 
+Then we tried to train, KNN with Accesories, RandomForest with Subject Focus, Blur & All features with training and validation set (more data) and measure RMSE with test set. However, it turns out that training with more data doesn't improve the model and some cases worsen it. 
+We think, this is because of bad data and needs a good cleanup of the data. However, its not possible to determine the popularity score by checking the image with human eye. 
+So, we have decided to train the model with less data by random split and continue this process until we get our target RMSE with the test data. When we reach our target RMSE then we tried to lower the target and continue the process. 
+
+This way we have get our best KNN with Accessories feature, best RandomForest with All features and best RandomForest with Subject Focus and Blur.
+
+Still the models we got is not impressive but its little improved and RandomForest with All features shows consitency while testing with random data. 
+
+Our future plan is to try the same procedure again and again with minimal data try to clean the data. 
 
 ## Attempted YOLOv5
 YOLOv5 was selected since one of the teammembers already was familiar with it so training could be started quickly. The YOLOv5s model was selected as an entry point. Official documentation was followed to label and format the data into a YOLOv5 format.
