@@ -12,6 +12,10 @@ So an **image classifie**r was created with Tensorflow using this guide. This ap
 Finally a **structured data classifier** was created with Tensorflow by following this guide. This yielded the best result other than the **basic approach**.
 
 ## Basic approach
+In basic approach, we first tried to findout which feature or features impacting mostly to the popularity score. To get that we calculated percentage of score lies between several categories like 80-100, 50-80, 30-50 & 0-30 depending on having a feature. 
+
+With this approach we got following distribution:
+![image](.\images\featureDistribution.png)
 
 ## Attempted YOLOv5
 YOLOv5 was selected since one of the teammembers already was familiar with it so training could be started quickly. The YOLOv5s model was selected as an entry point. Official documentation was followed to label and format the data into a YOLOv5 format.
