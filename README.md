@@ -3,13 +3,15 @@ Our plan was to take multiple different approaches to the problem. Main goals fo
 
 The first approach was to use the modeling algorithms we learned about in class to take the simplest path to the result as possible, the **basic approach**. This meant building different models on the data available and seeing which one performed the best. 
 
-The second was to use an image recognition framework to "recognize" the popularity of the photos using **YOLOv5**.
+The second was to use an image recognition framework to "recognize" the popularity of the photos using **YOLOv5** following this [guide](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data).
 
 Then originally it was planned to augment that recognition model by splitting the data by dogs and cats and training the popularity recognition separately on them. However, since the recognition model approach did not work, this was binned and other methods were explored.
 
-So an **image classifier** was created with Tensorflow using this guide. This approach did not yield any better results and it was decided that the images might not have enough data to be extracted from them, or the model was not succeeding in extracting the data.
+So an **image classifier** was created with Tensorflow using this [guide](https://www.tensorflow.org/tutorials/images/classification). This approach did not yield any better results and it was decided that the images might not have enough data to be extracted from them, or the model was not succeeding in extracting the data.
 
-Finally a **structured data classifier** was created with Tensorflow by following this guide. This yielded the second best result after the **basic approach**.
+Finally a **structured data classifier** was created with Tensorflow by following this [guide](https://www.tensorflow.org/tutorials/structured_data/preprocessing_layers). This yielded the second best result after the **basic approach**.
+
+We estimate around 60-70h between the two authors to complete all of these approaches and visualize some results.
 
 # Basic approach
 In basic approach, we first tried to findout which feature or features impacting mostly to the popularity score. To get that we calculated percentage of score lies between several categories like 80-100, 50-80, 30-50 & 0-30 depending on having a feature. 
