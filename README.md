@@ -68,7 +68,7 @@ Since YOLOv5 did not succeed it was thought that maybe image recognition was not
 
 Here are the training metrics for the image classifier.
 
-![image](https://user-images.githubusercontent.com/51961431/145858736-7092ae5d-1402-4278-97b2-24f9f03b05c6.png
+![image](https://user-images.githubusercontent.com/51961431/145858736-7092ae5d-1402-4278-97b2-24f9f03b05c6.png)
 
 So it was thought maybe the images simply did not have enough data available to be extracted by the classifier and an image metadata based classifier was created as a final approach.
 
